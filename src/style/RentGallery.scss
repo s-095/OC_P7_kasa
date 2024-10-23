@@ -1,0 +1,11 @@
+.rent-gallery {
+    background-color: #F6F6F6;
+    padding: 50px;
+    margin: 45px 100px;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 32% 32% 33%;
+    grid-column-gap: 37px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+.navbar {
+    margin: 45px 100px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        list-style: none;
+
+        a {
+        text-decoration: none;
+        color: black;
+        }
+    }
+}

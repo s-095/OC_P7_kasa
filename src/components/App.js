@@ -1,9 +1,10 @@
-import '../style/App.css';
+import '../style/App.scss'
 import KasaRouter from './KasaRouter'
 
 function App() {
-  return <KasaRouter/>
-
+  return (
+      <KasaRouter />
+  )
 }
 
-export default App;
+export default App

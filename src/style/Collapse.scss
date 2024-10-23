@@ -1,0 +1,35 @@
+.collapse {
+    
+    display: flex;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 24px;
+    flex-direction: column;
+    
+    .collapse-title-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+        padding: 14px;
+        border-radius: 7px;
+        cursor: pointer;
+
+        .collapse-title {
+            color: white;
+            font-weight: 700;
+
+            .collapse-arrows {
+                display: flex;
+            }
+        }
+    }
+
+    .collapse-content {
+        color: black;
+        background-color: #F6F6F673;
+        padding: 14px;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+}

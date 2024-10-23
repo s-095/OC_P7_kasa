@@ -1,0 +1,15 @@
+.navbar {
+  margin: 45px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+}
