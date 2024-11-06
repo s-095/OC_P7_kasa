@@ -1,0 +1,41 @@
+.rent__infos {
+    margin: 45px 100px;
+
+    h2 {
+        color: #FF6060;
+        font-size: 36px;
+        font-weight: 400;
+        margin: unset;
+    }
+
+    .rent__collapse {
+        display: flex;
+    }
+
+    .rent__location {
+        font-weight: 500;
+    }
+
+    .rent__host {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 14px;
+
+        .host__image {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .host__name {
+            font-size: 18px;
+            font-weight: 500;
+            color: #FF6060;
+            overflow-wrap: break-word;
+            inline-size: 83px;
+        }
+    }
+}

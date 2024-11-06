@@ -1,0 +1,8 @@
+.ratings {
+  display: flex;
+  gap: 4px;
+}
+.ratings .star {
+  width: 24px;
+  height: 24px;
+}

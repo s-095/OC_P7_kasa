@@ -17,7 +17,7 @@ function Collapse({ title, content }) {
                     {title}
                 </div>
                 <div className="collapse-arrows">
-                    {isOpen ? <img src="./assets/images/arrow-down.svg" alt="flèche bas" /> : <img src="./assets/images/arrow-up.svg" alt="flèche haut" />}
+                    {isOpen ? <img src="../assets/images/arrow-down.svg" alt="flèche bas" /> : <img src="../assets/images/arrow-up.svg" alt="flèche haut" />}
                 </div>
             </div>
             {isOpen && (

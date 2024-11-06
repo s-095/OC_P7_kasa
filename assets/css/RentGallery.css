@@ -4,8 +4,16 @@
   margin: 45px 100px;
   border-radius: 24px;
   display: grid;
-  grid-template-columns: 32% 32% 33%;
-  grid-column-gap: 37px;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 4%;
   grid-row-gap: 30px;
-  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .rent-gallery {
+    grid-template-columns: 100%;
+    margin: unset;
+    padding: 10px;
+    background-color: unset;
+  }
 }

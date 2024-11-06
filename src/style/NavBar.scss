@@ -10,8 +10,14 @@
         list-style: none;
 
         a {
-        text-decoration: none;
-        color: black;
+            text-decoration: none;
+            color: black;
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        margin: unset;
     }
 }

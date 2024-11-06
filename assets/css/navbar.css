@@ -13,3 +13,9 @@
   text-decoration: none;
   color: black;
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    margin: unset;
+  }
+}
