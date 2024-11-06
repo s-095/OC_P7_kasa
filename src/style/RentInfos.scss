@@ -1,41 +1,96 @@
 .rent__infos {
     margin: 45px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
 
-    h2 {
-        color: #FF6060;
-        font-size: 36px;
-        font-weight: 400;
-        margin: unset;
+    ul {
+        list-style-type: none; 
+        padding-left: 0;       
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 60%;
+
+            h2 {
+                color: #FF6060;
+                font-size: 36px;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            .rent__location {
+                font-weight: 500;
+                font-size: 16px;
+                color: #333;
+            }
+
+            .rent__tags {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+            }
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            max-width: 50%;
+
+            .rent__host-ratings {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .rent__host {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    gap: 14px;
+
+                    .host__image {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                    }
+
+                    .host__name {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #FF6060;
+                        text-align: right;
+                        word-wrap: break-word;
+                        max-width: 83px;
+                    }
+                }
+
+                .ratings {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 13px;
+                }
+            }
+        }
     }
 
     .rent__collapse {
+        width: 100%;
         display: flex;
-    }
+        flex-direction: row;
+        gap: 15px;
+        margin: unset;
 
-    .rent__location {
-        font-weight: 500;
-    }
-
-    .rent__host {
-        display: flex;
-        margin-top: 20px;
-        flex-direction: row-reverse;
-        align-items: center;
-        gap: 14px;
-
-        .host__image {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .host__name {
-            font-size: 18px;
-            font-weight: 500;
-            color: #FF6060;
-            overflow-wrap: break-word;
-            inline-size: 83px;
-        }
     }
 }

@@ -1,50 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "../style/Slide.scss";
-import data from "./data/rent-data.json";
 
-function Slide({ id }) {
-    const [pictures, setPictures] = useState([]);
+function Slide({logement}) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const pictures = logement.pictures || [];
 
-    useEffect(() => {
-
-        const logement = data.find(item => item.id === id);
-        if (logement && logement.pictures) {
-            setPictures(logement.pictures);
-        }
-    });
-
-    const handleArrowLeft = () => {
-        if (currentIndex === 0) {
-            setCurrentIndex(pictures.length - 1);
-        } else {
-            setCurrentIndex(currentIndex - 1);
-        }
+    const clickPreviousArrow = () => {
+        setCurrentIndex(currentIndex === 0 ? pictures.length - 1 : currentIndex - 1);
     };
 
-    const handleArrowRight = () => {
-        if (currentIndex === pictures.length - 1) {
-            setCurrentIndex(0);
-        } else {
-            setCurrentIndex(currentIndex + 1);
-        }
+    const clickNextArrow = () => {
+        setCurrentIndex(currentIndex === pictures.length - 1 ? 0 : currentIndex + 1);
     };
 
     if (pictures.length === 0) return null;
 
     return (
         <div className="slide">
-
             {pictures.length > 1 && (
-                <div className="slide__arrow slide__arrow--left" onClick={handleArrowLeft}>
+                <div className="slide__arrow slide__arrow--left" onClick={clickPreviousArrow}>
                     <img src="/assets/images/arrow-left.svg" alt="Previous" />
                 </div>
             )}
-
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slide__image" />
-
             {pictures.length > 1 && (
-                <div className="slide__arrow slide__arrow--right" onClick={handleArrowRight}>
+                <div className="slide__arrow slide__arrow--right" onClick={clickNextArrow}>
                     <img src="/assets/images/arrow-right.svg" alt="Next" />
                 </div>
             )}
