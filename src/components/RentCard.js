@@ -1,6 +1,7 @@
 import "../style/RentCard.scss"
 
 function RentCard({ id, cover, title }) {
+    
     return (
 
         <div className="rent-card" key={id} >
@@ -12,6 +13,5 @@ function RentCard({ id, cover, title }) {
 
     )
 }
-
 
 export default RentCard

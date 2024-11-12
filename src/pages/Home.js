@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="home">
             <NavBar />
-            <Banner />
+            <Banner title="Chez vous, partout et ailleurs" />
             <RentGallery/>
             <Footer />
         </div>

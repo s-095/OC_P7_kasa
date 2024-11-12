@@ -1,5 +1,7 @@
+@import "App.scss";
+
 .rent__infos {
-    margin: 45px 100px;
+    margin: 45px 7%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -7,8 +9,11 @@
     flex-direction: column;
 
     ul {
-        list-style-type: none; 
-        padding-left: 0;       
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        margin: unset;
     }
 
     .container1 {
@@ -23,7 +28,8 @@
             max-width: 60%;
 
             h2 {
-                color: #FF6060;
+                color: $main-color;
+                ;
                 font-size: 36px;
                 font-weight: 400;
                 margin: 0;
@@ -52,13 +58,14 @@
             .rent__host-ratings {
                 display: flex;
                 flex-direction: column;
-                gap: 15px;
+                gap: 27px;
 
                 .rent__host {
                     display: flex;
                     flex-direction: row-reverse;
                     align-items: center;
                     gap: 14px;
+                    max-width: min-content;
 
                     .host__image {
                         width: 64px;
@@ -69,10 +76,11 @@
                     .host__name {
                         font-size: 18px;
                         font-weight: 500;
-                        color: #FF6060;
+                        color: $main-color;
+                        ;
                         text-align: right;
                         word-wrap: break-word;
-                        max-width: 83px;
+                        max-width: 100px;
                     }
                 }
 
@@ -92,5 +100,70 @@
         gap: 15px;
         margin: unset;
 
+    }
+}
+
+@media (max-width: 768px) {
+    .rent__infos {
+        margin: 20px;
+        gap: unset;
+
+        .container1 {
+            flex-direction: column;
+            max-width: unset;
+
+            .container2 {
+                max-width: unset;
+
+                h2 {
+                    font-size: 18px;
+                }
+
+                p {
+                    margin: unset;
+                    font-size: 14px;
+                }
+            }
+
+            .container3 {
+                max-width: unset;
+                display: unset;
+
+                .rent__host-ratings {
+                    display: flex;
+                    gap: 15px;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    margin-block: 14px;
+
+                    .rent__host {
+                        .host__name {
+                            font-size: 12px;
+                        }
+
+                        .host__image {
+                            height: 32px;
+                            width: 32px;
+
+                        }
+                    }
+
+                    .ratings {
+                        gap: 8px;
+
+                        img {
+                            height: 13px;
+                            width: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rent__collapse {
+            flex-direction: column;
+            gap: 8px;
+        }
     }
 }

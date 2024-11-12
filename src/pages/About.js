@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar"
-import BannerAbout from "../components/BannerAbout"
+import Banner from "../components/Banner"
 import Footer from "../components/Footer"
 import CollapseAboutContainer from "../components/CollapseAboutContainer"
 
@@ -7,7 +7,7 @@ function About() {
     return (
         <div className="about">
             <NavBar />
-            <BannerAbout />
+            <Banner/>
             <CollapseAboutContainer />
             <Footer />
         </div>

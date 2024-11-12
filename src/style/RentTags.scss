@@ -1,9 +1,18 @@
+@import "App.scss";
+
 .rent__tag {
-    margin-right: 14px;
     color: white;
-    background-color: #FF6060;
+    background-color: $main-color;
     padding: 4px 35px;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .rent__tag {
+        font-size: 10px;
+        padding: 4px 20px;
+        border-radius: 6px;
+    }
 }

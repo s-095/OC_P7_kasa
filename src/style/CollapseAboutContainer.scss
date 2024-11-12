@@ -1,5 +1,15 @@
-.collapse-container{
+.collapse-container {
     display: flex;
     flex-direction: column;
-    margin: 45px 20%;
+    margin: 45px 14%;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .collapse-container {
+        display: flex;
+        flex-direction: column;
+        margin: 29px 5%;
+        gap: 20px;
+    }
 }

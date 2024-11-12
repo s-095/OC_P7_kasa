@@ -1,14 +1,14 @@
 .banner {
-    max-width: 100vw;
-    margin: 45px 100px;
+
+    margin: 45px 7%;
     height: 223px;
-    border-radius: 24px;
+    border-radius: 11px;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.2);
 
     h1 {
         position: relative;
@@ -24,15 +24,50 @@
         height: 100%;
         position: absolute;
         filter: brightness(50%);
-    
     }
 
+    br {
+        display: none;
+    }
 }
 
-@media (max-width: 480px) {
-    .banner {
-        height: 111px;
+.about-banner {
+    max-width: 100vw;
+    margin: 45px 7%;
+    height: 223px;
+    border-radius: 11px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        object-fit: cover;
         width: 100%;
-        margin: unset;
+        height: 100%;
+        position: absolute;
+        filter: brightness(50%);
+
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        margin: 15px 20px;
+        height: 111px;
+        justify-content: flex-start;
+
+        h1 {
+            text-shadow: none;
+            font-size: 24px;
+        }
+
+        br {
+            display: block;
+        }
+    }
+
+    .about-banner {
+        margin: 15px 20px;
+        height: 111px;
+        justify-content: flex-start;
     }
 }
